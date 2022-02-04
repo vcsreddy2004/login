@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>
+            login
+        </title>
+        <link rel="stylesheet" href="bootstrap/css/bootstrap.css" />
+        <link rel="stylesheet" href="bootstrap/css/mdb.css" />
+        <link rel="stylesheet" href="stylesheet.css" />
+    </head>
+    <body>
+        <div class="container px-0">
+            <div class="badge col-md-12">
+                <h1 class="mt-3 px-3 py-3 mb-0" id="loginErr"></h1>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row login-card-costum">
+                <div class="card col-md-6 bg-dark px-0">
+                    <img height=100% src="login.png" />
+                </div>
+                <di class="col-md-6 px-0">
+                    <div class="card-header bg-dark text-white text-center">
+                        Login
+                    </div>
+                    <div class="card-body">
+                        <form class="lead">
+                            <span>
+                                User name
+                            </span><br />
+                            <input class="col-md-10" type="text" id="userName" />
+                            <img src="icons/person.svg" width="50px"/><br />
+                            <span>
+                                password
+                            </span><br />
+                            <input class="col-md-10" type="password" id="password" />
+                            <img src="icons/key.svg" width="50px" /><br /><br />
+                            <span class="bg-dark py-2 display-6 text-white" id="displayCaptcha">&nbsp;</span><br /><br />
+                            <input class="col-md-10" type="text" id="captcha" /><br /><br />
+                            <input type="button" value="Login" class="btn btn-success col-md-4 text-white" id="login" />
+                        </form>
+                    </div>
+                </di>
+            </div>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
